@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    
+
+    <!-- Player Setup -->
+    <div id="player-setup">
+    <input type="text" id="playerXName" placeholder="Player X Name" />
+    <input type="text" id="playerOName" placeholder="Player O Name" />
+    <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <!-- Game Section -->
+    <div id="game-container" style="display: none;">
+    <div id="game" class="board"></div>
+    <p id="status"></p>
+
+    <div id="scoreboard">
+        <p><span id="playerXLabel">Player X</span> Wins: <span id="xScore">0</span></p>
+        <p><span id="playerOLabel">Player O</span> Wins: <span id="oScore">0</span></p>
+        <p>Draws: <span id="draws">0</span></p>
+    </div>
+
+    <button onclick="restartGame()">Restart Game</button>
+    <button onclick="resetScores()">Reset Score</button>
+    </div>
+    <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
